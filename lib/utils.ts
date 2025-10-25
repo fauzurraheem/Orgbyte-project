@@ -1,3 +1,4 @@
+import { CustomObject } from "@/types/custom";
 import { clsx, type ClassValue } from "clsx"
 import { twMerge } from "tailwind-merge"
 
