@@ -70,42 +70,43 @@ const Navbar: React.FC = () => {
                     <div className="flex items-center gap-2">
                       <div className="w-8 h-8 bg-linear-to-r from-blue-500 via-green-500 to-blue-500 rounded-sm flex items-center justify-center">
                         <div className="flex gap-0.5">
-                          <div className="w-0.5 h-4 bg-white"></div>
-                          <div className="w-0.5 h-4 bg-white"></div>
-                          <div className="w-0.5 h-4 bg-white"></div>
-                          <div className="w-0.5 h-4 bg-white"></div>
+                          <Home />
                         </div>
                       </div>
-                      <span className="text-xl font-semibold text-gray-800">Taskdog</span>
+                      <span className="text-xl font-semibold text-gray-800">Orgbyte</span>
                     </div>
                   </div>
 
                   {/* Mobile Menu Items */}
                   <div className="flex-1 overflow-y-auto">
                     <div className="p-6 space-y-6">
-                      <Link href="#" className="block text-2xl font-medium text-gray-800 hover:text-gray-600">
+                      <Link href="#" className="block text-lg font-medium text-gray-800 hover:text-gray-600">
                         Home
                       </Link>
                       
                       <div>
                         <button
                           onClick={() => setProductsOpen(!productsOpen)}
-                          className="flex items-center justify-between w-full text-2xl font-medium text-gray-800 hover:text-gray-600"
+                          className="flex items-center justify-between w-full text-lg font-medium text-gray-800 hover:text-gray-600"
                         >
                           Products
                           <ChevronDown className={`w-5 h-5 transition-transform ${productsOpen ? 'rotate-180' : ''}`} />
                         </button>
                       </div>
 
-                      <Link href="#" className="block text-2xl font-medium text-gray-800 hover:text-gray-600">
+                      <Link href="#" className="block text-lg font-medium text-gray-800 hover:text-gray-600">
                         About
                       </Link>
 
-                      <Link href="#" className="block text-2xl font-medium text-gray-800 hover:text-gray-600">
-                        Careers
-                      </Link>
+                     <button
+                        onClick={() => setProductsOpen(!productsOpen)}
+                        className="flex items-center justify-between w-full text-lg font-medium text-gray-800 hover:text-gray-600"
+                      >
+                        Services
+                        <ChevronDown className={`w-5 h-5 transition-transform `} />
+                      </button>
 
-                      <button className="w-full bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-md font-medium transition-colors text-lg">
+                      <button className="w-full bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md font-medium transition-colors text-lg">
                         Contact Us
                       </button>
                     </div>
